@@ -11,12 +11,10 @@ const About = ({ partners }) => {
         <div className={styles.aboutContent}>
           <h1 className={styles.title}>About Us</h1>
           <p className={styles.text}>
-            <strong>GRUPO CONSULTOR</strong> Lorem Ipsum is simply dummy text of
-            the printing and typesetting industry. Lorem Ipsum has been the
-            industrys standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a type
-            specimen book. It has survived not only five centuries, but also the
-            leap into electronic typesetting, remaining essentially unchanged.
+            <strong>Next Level Partners </strong> It is a group that helps you
+            establish and define leveraged business strategies and support you
+            in your digital transformation that will allow you to face the new
+            economy..
           </p>
           <Team partners={partners} />
         </div>
