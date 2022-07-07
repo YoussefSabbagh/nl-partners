@@ -31,7 +31,7 @@ const Contact = () => {
             <div className={styles.social}>
               <a
                 className={styles.socialIcon}
-                href="https://www.linkedin.com/in/reinaldo-sabbagh/"
+                href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -39,7 +39,7 @@ const Contact = () => {
               </a>
               <a
                 className={styles.socialIcon}
-                href="https://github.com/rei-sabbagh"
+                href="https://github.com"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -47,7 +47,7 @@ const Contact = () => {
               </a>
               <a
                 className={styles.socialIcon}
-                href="https://twitter.com/ReinaldoSabbagh/"
+                href="https://twitter.com/"
                 target="_blank"
                 rel="noreferrer"
               >

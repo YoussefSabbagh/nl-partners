@@ -37,12 +37,12 @@ const PartnerBio = ({ partner }) => {
         <h2 className="mt-4 mb-4 text-xl font-bold text-white">
           {partner.name}
         </h2>
-        <p className="text-white">
+        {/* <p className="text-white">
           <span>
             <FaEnvelope className={styles.span} />
           </span>
           {partner.email}
-        </p>
+        </p> */}
         <p className="text-white">
           <FaMapMarkerAlt className={styles.span} />
           {partner.location}
@@ -63,7 +63,7 @@ const PartnerBio = ({ partner }) => {
           </a>
           <a
             className={styles.socialIcon}
-            href="https://twitter.com/ReinaldoSabbagh/"
+            href="https://twitter.com/"
             target="_blank"
             rel="noreferrer"
           >

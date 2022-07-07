@@ -14,7 +14,7 @@ export default function Home() {
             <div className={styles.home__social}>
               <a
                 className={styles.home__socialIcon}
-                href="https://www.linkedin.com/in/reinaldo-sabbagh/"
+                href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -22,7 +22,7 @@ export default function Home() {
               </a>
               <a
                 className={styles.home__socialIcon}
-                href="https://github.com/rei-sabbagh"
+                href="https://github.com/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -30,7 +30,7 @@ export default function Home() {
               </a>
               <a
                 className={styles.home__socialIcon}
-                href="https://twitter.com/ReinaldoSabbagh/"
+                href="https://twitter.com/"
                 target="_blank"
                 rel="noreferrer"
               >
