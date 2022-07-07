@@ -1,0 +1,91 @@
+.contactSection {
+  height: calc(100vh - var(--header-height));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: var(--white-color);
+  @media screen and (max-width: 960px) {
+    padding: 0 2rem;
+    transition: all 0.8s ease;
+  }
+}
+
+.contactWrapper {
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+}
+
+.contactLeft {
+  flex: 1;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+
+  label {
+    width: 150px;
+  }
+  input,
+  textarea {
+    padding: 0 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    outline: none;
+
+    &:focus {
+      border-bottom: 3px solid var(--mainClr);
+    }
+  }
+  button {
+    padding: 15px;
+    background-color: var(--mainClr2);
+    color: var(--white-color);
+    cursor: pointer;
+    &:hover {
+      background-color: var(--mainClr1);
+      color: var(--mainClr);
+    }
+  }
+
+  input {
+    height: 45px;
+  }
+}
+
+.contactRight {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  font-size: 3rem;
+
+  .socialIcon {
+    color: var(--mainClr2);
+    transition: all 0.3s ease-in-out;
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+    &:hover {
+      color: var(--mainClr);
+      transform: scale(0.96);
+    }
+  }
+}
+
+.title {
+  text-align: center;
+  color: var(--white-color);
+  font-size: var(--big-font-size);
+  margin-bottom: 5rem;
+}

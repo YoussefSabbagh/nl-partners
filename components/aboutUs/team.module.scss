@@ -1,0 +1,28 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  max-width: 100%;
+  margin-bottom: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  .circular {
+    height: 100px;
+    width: 100px;
+
+    border-radius: 100%;
+    overflow: hidden;
+    border: 5px solid transparent;
+    &:hover {
+      border-color: blue;
+    }
+  }
+}

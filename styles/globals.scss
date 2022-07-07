@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+  --test: hsl(200, 46%, 82%);
+  --header-height: 3rem;
+  --hue-color: 200;
+  --mainClr1: hsl(var(--hue-color), 70%, 60%);
+  --mainClr2: hsl(var(--hue-color), 90%, 40%);
+  --mainClr3: hsl(var(--hue-color), 40%, 50%);
+  --title-color: hsl(var(--hue-color), 30%, 18%);
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --text-color-light: hsl(var(--hue-color), 8%, 65%);
+  --input-color: hsl(var(--hue-color), 70%, 96%);
+  --body-color: hsl(var(--hue-color), 60%, 99%);
+  --black-color: #000;
+  --white-color: #fff;
+  --cta-color: #f63624;
+  --container-color: hsl(var(--hue-color), 57%, 95%);
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+  --ff-title: 'Heebo', sans-serif;
+  --ff-body: 'Heebo', sans-serif;
+  --fw-reg: 400;
+  --fw-bold: 600;
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+  --z-tooltip: 100;
+  --z-fixed: 200;
+  --z-modal: 300;
+
+  @media screen and (min-width: 968px) {
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  &:before {
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../public/images/bgs/bg3.jpg');
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.text-shadow {
+  text-shadow: 0px 2px 0px rgb(0 0 0 / 30%);
+}
+
+.adjacent-post {
+  & .arrow-btn {
+    transition: width 300ms ease;
+    width: 50px;
+  }
+
+  &:hover {
+    & .arrow-btn {
+      width: 60px;
+    }
+  }
+}

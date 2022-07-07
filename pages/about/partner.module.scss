@@ -1,0 +1,122 @@
+.section {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 3rem auto 0;
+  padding: 2rem 1rem 1rem;
+}
+
+.form {
+  width: 100%;
+}
+
+.formGroup {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-bottom: 3rem;
+  border: 5px double var(--mainClr1);
+  gap: 1rem;
+
+  &::before {
+    content: attr(data-group-name);
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    transform: translateY(-50%);
+    background-color: var(--mainClr3);
+    font-weight: bold;
+    padding: 0 1rem;
+  }
+}
+
+.formField {
+  width: 100%;
+  position: relative;
+  padding: 0 1rem;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+
+  label,
+  input {
+    padding: 0;
+  }
+
+  select {
+    width: 100%;
+    height: 2rem;
+  }
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.bio {
+  width: 100%;
+  text-size-adjust: auto;
+  background-color: var(--mainClr3);
+  padding: 2rem;
+}
+
+.rowButtons {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+
+  button {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background: var(--mainClr1);
+    cursor: pointer;
+    padding: 1rem 2rem;
+    transition: 0.2s linear;
+
+    &:last-child {
+      background: var(--mainClr3);
+    }
+
+    &:hover {
+      transform: scale(0.95);
+    }
+  }
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialIcon {
+  color: var(--white-color);
+  font-size: 2.5rem;
+  margin-right: 3rem;
+
+  &:hover {
+    color: var(--mainClr);
+  }
+}
+
+.span {
+  display: inline;
+  margin-right: 1rem;
+}
