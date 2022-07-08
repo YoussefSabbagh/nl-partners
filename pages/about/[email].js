@@ -71,7 +71,7 @@ const PartnerBio = ({ partner }) => {
           </a>
         </div>
 
-        <div className={`${styles.formField} ${styles.longTxt}`}>
+        <div className="text-white max-w-screen-lg text-center m-auto mt-10">
           {partner.profile.raw.children.map((typeObj, index) => {
             const children = typeObj.children.map((item, itemindex) =>
               getContentFragment(itemindex, item.text, item)
