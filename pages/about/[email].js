@@ -2,7 +2,6 @@ import { useRouter } from 'next/router';
 import styles from './partner.module.scss';
 
 import {
-  FaEnvelope,
   FaMapMarkerAlt,
   FaLinkedin,
   FaRegHandPointRight,
